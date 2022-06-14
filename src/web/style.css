@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('Nunito-ExtraLight.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', system-ui, sans-serif;
+}
+
+@media (min-width: 660px) {
+    html{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+body{
+    padding: 1%;
+    width: 660px;
+    height: 460px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .text span{
+    font-size: 2em;
+    margin-left: 2%;
+}
+
+header .text img{
+    width: 15%;
+    height: auto;
+}
+
+header .links{
+    display: flex;
+    flex-direction: column;
+}
+
+header .links a{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: grey;
+    transition: all 0.1s ease-in-out;
+}
+
+header .links a:hover{
+    color: black;
+}
+
+header .links .language{
+    display: flex;
+    flex-direction: row;
+}
+
+.versions{
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.versions label{
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.versions button{
+    margin-top: 3%;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+#server-ip{
+    margin-top: 1%;
+    font-size: 1.1em;
+}
+
+.versions .mc-editions{
+    display: flex;
+    margin-top: 1%;
+    flex-direction: column;
+}
+
+.versions .mc-editions .select-edition{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.versions .mc-editions span{
+    width: 45%;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#java{
+    background-color: #00ff407c;
+}
+
+.availables-versions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#versions-label{
+    margin-top: 4.5%;
+    font-weight: normal;
+    text-align: center;
+    display: none;
+}
+
+#versions-list{
+    text-align: center;
+    font-size: 1.1em;
+    color: green;
+}
+
+#versions-error{
+    margin-top: 1.7%;
+    display: none;
+    color: red;
+}
+
+.installer{
+    margin-top: 5%;
+}
+
+.installer label{
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.installer input{
+    width: 100%;
+    font-size: 1.1em;
+}
+
+.installer button{
+    width: 100%;
+    margin-top: 3%;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+#install-error{
+    margin-top: 1.7%;
+    color: red;
+    display: none;
+}
+
+#copyrights{
+    text-decoration: none;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    transition: all 0.1s ease-in-out;
+}
+
+#copyrights:hover{
+    color: black;
+}
+
+#versions-loading{
+    margin-top: 2%;
+    font-weight: normal;
+    text-align: center;
+    display: none;
+}
+
+#install-loading{
+    margin-top: 2%;
+    font-weight: normal;
+    text-align: center;
+    display: none;
+}

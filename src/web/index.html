@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type=text/css href="style.css">
+    <link rel="shortcut icon" type="image/png" href="img/stealth_logo.png">
+    <title>Stealth</title>
+</head>
+<body>
+    <header>
+      <div class="text">
+        <img src="img/stealth_logo.png" alt="favicon">
+        <span>Stealth</span>
+      </div>
+      <div class="links">
+        <a href="https://github.com/Jagname/Stealth" target="_blank"><span>GitHub</span><img src="img/github_logo.png" alt="github"></a>
+        <div class="language">
+          <label id="language-label" for="language-select">Language&nbsp:&nbsp</label>
+          <select id="language-select" name="languages">
+              <option value="english">English</option>
+              <option value="french">Français (French)</option>
+          </select>
+      </div>
+      </div>
+    </header>
+    <section class="versions">
+      <label id="ip-label" for="server-ip">Enter the server IP address&nbsp:</label>
+      <input type="text" id="server-ip" placeholder="play.server.com">
+      <section class="mc-editions">
+        <label id="edition-label">What edition is the server using?</label>
+        <div class="select-edition">
+          <span id="java">Java</span>
+          <span id="bedrock">Bedrock</span>
+        </div>
+      </section>
+      <button id="check-versions">Check available versions</button>
+      <span id="versions-loading">Loading...</span>
+      <div class="availables-versions">
+        <label id="versions-label">Available version(s) detected&nbsp:&nbsp</label>
+        <span id="versions-list"></span>
+        <span id="versions-error">An error occurred:<br><br>- Check the server IP address<br>- Check that the game edition selected is the correct one<br>- The server may be currently unavailable</span>
+      </div>
+    </section>
+    <section class="installer">
+      <label id="version-label">Which version do you want to install? (Optifine)</label>
+      <input type="text" id="version-to-install" placeholder="Enter the version number (for example: 1.8.9)">
+      <button id="download-version">Install version</button>
+      <span id="install-loading">Loading...</span>
+      <span id="install-error">An error occurred:<br><br>- Check the version number<br>- The version may not be available yet</span>
+    </section>
+    <a id="copyrights" href="https://github.com/Jagname" target="_blank">Created by Jagname</a>
+</body>
+<script src="../eel.js"></script>
+<script src="script.js"></script>
+</html>
