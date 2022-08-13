@@ -30,7 +30,7 @@ Stealth is a small software that allows you to check the available version(s) on
     py -m pip install -r requirements.txt
     ```
 
-* You need Java to install a Optifine version.
+* You need Java to install an Optifine version.
 
 ---
 
